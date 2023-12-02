@@ -4,8 +4,25 @@ fn main() {
     dbg!(output);
 }
 
-fn part1(input: &str) -> i64 {
-    todo!()
+fn part1(input: &str) -> u32 {
+    let mut result = 0;
+    for line in input.lines() {
+        // first digit
+        for c in line.chars() {
+            if c.is_numeric() {
+                result += 10 * c.to_digit(10).unwrap();
+                break;
+            }
+        }
+        // last digit
+        for c in line.chars().rev() {
+            if c.is_numeric() {
+                result += c.to_digit(10).unwrap();
+                break;
+            }
+        }
+    }
+    result
 }
 
 #[cfg(test)]
