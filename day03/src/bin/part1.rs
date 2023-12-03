@@ -16,6 +16,6 @@ mod tests {
     fn example_input() {
         let input = include_str!("./example.txt");
         let result = part1(input);
-        assert_eq!(result, 142);
+        assert_eq!(result, 4361);
     }
 }

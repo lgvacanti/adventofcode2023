@@ -1,7 +1,7 @@
 use nom::{
     branch::alt,
     bytes::complete::tag,
-    character::complete::{char, digit1, multispace1, newline, space1},
+    character::complete::{char, digit1, multispace1, space1},
     combinator::map_res,
     multi::separated_list1,
     sequence::tuple,
