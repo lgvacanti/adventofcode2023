@@ -3,6 +3,10 @@
 version = 3
 
 [[package]]
+name = "day00"
+version = "0.1.0"
+
+[[package]]
 name = "day01"
 version = "0.1.0"
 
@@ -12,6 +16,10 @@ version = "0.1.0"
 dependencies = [
  "nom",
 ]
+
+[[package]]
+name = "day03"
+version = "0.1.0"
 
 [[package]]
 name = "memchr"
